@@ -191,17 +191,17 @@ function pawndoc2html_print_member(
 noparams:
 
 	// not for enumerations
-	if( $type != 'T')
+	if ($type != 'T')
 	{
 		// value
-		if( isset($attribs['value']))
+		if (isset($attribs['value']))
 		{
 			echo '<dl><dt>Value</dt><dd>' . $attribs['value'] .
 				'</dd></dl>';
 		}
 
 		// tag names
-		if( isset($elem->tagname))
+		if (isset($elem->tagname))
 		{
 			$tag = $elem->tagname->attributes();
 			echo '<dl><dt>Tag</dt><dd>' . $tag['value'] .
