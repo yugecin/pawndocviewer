@@ -1,0 +1,199 @@
+	/* http://meyerweb.com/eric/tools/css/reset/ 
+	   v2.0 | 20110126
+	   License: none (public domain)
+	*/
+	html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{outline:0;margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1.2em}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+em {
+	font-style: italic;
+}
+
+strong {
+	font-weight: bold;
+}
+
+span.u {
+	text-decoration: underline;
+}
+
+body {
+	font-family: 'Tahoma';
+}
+
+body > div {
+	padding: 0 4em 0 4em;
+	margin: auto auto;
+}
+
+@media screen and (max-width: 600px){
+	body > div {
+		padding: 3px;
+	}
+}
+
+body > div > p {
+	background: #4E4887;
+	color: #fff;
+	padding: 0.5em;
+}
+
+body > div > p > span {
+	float: right;
+}
+
+a:link,
+a:active,
+a:visited {
+    color: #4e4887
+}
+
+a:hover {
+    color: #f16043
+}
+
+body > div > p a:link,
+body > div > p a:active,
+body > div > p a:visited {
+    color: #fff;
+}
+
+h1 {
+	color: #336699;
+	font-size: 2.5em;
+	margin: 1em 0 1em 0;
+}
+
+article {
+	background: #eee;
+	padding-left: 4em;
+	padding-right: 4em;
+	padding-bottom: 1em;
+	margin-bottom: 2em;
+}
+
+article > h2 {
+	font-size: 1.3em;
+	font-weight: bold;
+	padding-top: 0.4em;
+	padding-bottom: 0.4em;
+}
+
+article > h2.Functions {
+	color: #818748;
+}
+
+article > h2.Constants {
+	color: #874862;
+}
+
+article > h2.Variables {
+	color: #48876D;
+}
+
+article > ul > li {
+	margin: 0.1em 0 0.1em 0;
+}
+
+section {
+	border-top: 2px solid #000;
+	margin-bottom: 2em;
+}
+
+section.function {
+	border-color: #818748;
+}
+
+section.constant {
+	border-color: #874862;
+}
+
+section.variable {
+	border-color: #48876D;
+}
+
+section > h2 {
+	font-size: 1.2em;
+	color: #4E4887;
+	font-weight: bold;
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+}
+
+section > h2 > a {
+	text-decoration: none;
+}
+
+section > h2 > a.wiki {
+	font-size: 70%;
+	margin-left: 1em;
+	color: #bbb;
+}
+
+section > h2 > a.wiki:hover {
+	text-decoration: underline;
+}
+
+section > h2 > span {
+	float: right;
+	border-right: 5px solid #000;
+	color: #000;
+	padding-right: 5px;
+}
+
+section.function > h2 > span {
+	border-color: #818748;
+	color: #818748;
+}
+
+section.constant > h2 > span {
+	border-color: #874862;
+	color: #874862;
+}
+
+section.variable > h2 > span {
+	border-color: #48876D;
+	color: #48876D;
+}
+
+dl {
+	margin-bottom: 1em;
+}
+
+dl > dt {
+	color: #4E4887;
+	font-weight: bold;
+	margin-bottom: 0.5em;
+}
+
+dl.syntax > dd {
+	font-weight: bold;
+}
+
+dd {
+	margin-left: 5em;
+	/*white-space: pre-wrap;*/
+	padding-right: 5em;
+}
+
+table {
+	background: #ddeeff;
+}
+
+td {
+	padding: 0.4em 0.6em 0.4em 0.6em;
+}
+
+tr > td:first-child {
+	font-style: italic;
+	padding-right: 40px;
+	font-weight: bold;
+}
+
+tr > td:nth-child(2) {
+	white-space: nowrap;
+}
+
+tr > td > span.paraminfo {
+	color: #336699;
+	font-weight: bold;
+}
