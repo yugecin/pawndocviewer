@@ -29,6 +29,10 @@ function pawndoc2html($input)
 		$summary = trim($x->general->summary);
 		$header .= "<dl><dd>{$summary}</dd></dl>";
 	}
+	else if (isset($x->general))
+	{
+		$header .= '<dl><dd>' . trim($x->general) . '</dd></dl>';
+	}
 
 	foreach ($x->members->member as $m)
 	{
