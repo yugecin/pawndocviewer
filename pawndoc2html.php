@@ -212,7 +212,10 @@ noparams:
 	// returns
 	if (isset($elem->returns))
 	{
-		echo "<dl><dt>Returns</dt><dd>{$elem->returns}</dd></dl>";
+		foreach ($elem->returns as $r)
+		{
+			echo "<dl><dt>Returns</dt><dd>{$r}</dd></dl>";
+		}
 	}
 
 	// remarks
