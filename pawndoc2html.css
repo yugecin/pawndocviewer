@@ -197,3 +197,7 @@ tr > td > span.paraminfo {
 	color: #336699;
 	font-weight: bold;
 }
+
+dd p + p {
+	margin-top: 0.5em;
+}

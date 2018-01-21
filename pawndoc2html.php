@@ -218,7 +218,12 @@ noparams:
 	// remarks
 	if (isset($elem->remarks))
 	{
-		echo "<dl><dt>Remarks</dt><dd>{$elem->remarks}</dd></dl>";
+		echo '<dl><dt>Remarks</dt><dd>';
+		foreach ($elem->remarks as $remark)
+		{
+			echo "<p>{$remark}</p>";
+		}
+		echo '</dd></dl>';
 	}
 
 	// referrers (used by)
