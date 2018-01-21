@@ -131,8 +131,8 @@ function pawndoc2html_print_member(
 	// syntax
 	if (isset($attribs['syntax']))
 	{
-		echo '<dl class=\"syntax\"><dt>Syntax</dt><dd>' .
-			$attribs['syntax'] . '</dd></dl>';
+		echo '<dl class=\"syntax\"><dt>Syntax</dt><dd><strong>' .
+			$attribs['syntax'] . '</strong></dd></dl>';
 	}
 
 	// param (syntax params)
